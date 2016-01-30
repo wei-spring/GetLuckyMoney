@@ -10,7 +10,7 @@ a tool for wechat get luckymoney....
  
  看一下运行的效果吧。
 
-[![App showcase](https://github.com/hpu-spring87/edaixi4scala/blob/master/edaixiscreenshot.png)](https://www.youtube.com/watch?v=kw7XBNEoAes&feature=youtu.be)
+[![App showcase](https://github.com/hpu-spring87/LuckyMoney/blob/master/screenshot.png)](https://www.youtube.com/watch?v=vGOM3f2dyPc&feature=youtu.be)
 
  
 
