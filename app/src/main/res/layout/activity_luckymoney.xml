@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#c14737"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+        android:id="@+id/preference_action_bar_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <ImageView
+        android:id="@+id/preference_back"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/lucky_money"
+        android:layout_below="@+id/preference_action_bar_placeholder"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:onClick="performBack"
+        android:src="@mipmap/ic_back" />
+
+    <View
+        android:id="@+id/preference_line"
+        android:layout_width="1px"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@id/preference_back"
+        android:layout_alignTop="@id/preference_back"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/preference_back"
+        android:background="#fde1b5" />
+
+    <TextView
+        android:id="@+id/lucky_money"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/preference_action_bar_placeholder"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/preference_line"
+        android:elegantTextHeight="false"
+        android:gravity="top"
+        android:paddingTop="5dp"
+        android:text="红包详情"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fde1b5"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/lucky_money_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/preference_back"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/preference_line"
+        android:elegantTextHeight="false"
+        android:gravity="top"
+        android:paddingBottom="5dp"
+        android:text="微信安全支付"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#fde1b5"
+        android:textSize="13sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_luckymoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preference_back"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/lucky_textView"
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:autoText="false"
+            android:background="@mipmap/bg_action_bar"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingBottom="10dp"
+            android:textColor="#fee1b4"
+            android:textSize="26dp" />
+
+        <me.chunsheng.hongbao.utils.CircleImageView
+            android:id="@+id/iv_luckymoney_from"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:onClick="editLuckyMoneyFromIcon"
+            android:src="@mipmap/mahuateng" />
+
+        <TextView
+            android:id="@+id/tv_luckymoney_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_luckymoney_from"
+            android:layout_centerHorizontal="true"
+            android:drawableRight="@mipmap/pin_icon"
+            android:onClick="editLuckyMoneyFrom"
+            android:paddingTop="5dp"
+            android:text="马化腾的红包  "
+            android:textColor="#1b1b1b" />
+
+        <TextView
+            android:id="@+id/tv_luckymoney_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_luckymoney_from"
+            android:layout_centerHorizontal="true"
+            android:onClick="editLuckyMoneyTitle"
+            android:text="恭喜发财,大吉大利!"
+            android:textColor="#828282" />
+
+
+        <TextView
+            android:id="@+id/tv_001"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_luckymoney_title"
+            android:layout_marginTop="30dp"
+            android:background="#f7f4eb"
+            android:padding="10dp"
+            android:text="1个红包共99999999元,8秒被抢光"
+            android:textColor="#828282" />
+
+        <me.chunsheng.hongbao.utils.CircleImageView
+            android:id="@+id/iv_001"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_001"
+            android:layout_margin="10dp"
+            android:onClick="editLuckyMoneyToIcon"
+            android:src="@mipmap/mayun" />
+
+        <TextView
+            android:id="@+id/tv_002"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_001"
+            android:layout_toRightOf="@id/iv_001"
+            android:onClick="editLuckyMoneyTo"
+            android:text="马云"
+            android:textColor="#1b1b1b" />
+
+        <TextView
+            android:id="@+id/tv_003"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_001"
+            android:layout_toRightOf="@id/iv_001"
+            android:onClick="editLuckyMoneyGetTime"
+            android:text="11:13:33"
+            android:textColor="#868686" />
+
+        <TextView
+            android:id="@+id/tv_004"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/iv_001"
+            android:onClick="editLuckyMoneyCount"
+            android:paddingRight="10dp"
+            android:text="99999999元"
+            android:textColor="#1b1b1b" />
+
+        <TextView
+            android:id="@+id/tv_005"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_001"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/queen_icon"
+            android:paddingRight="10dp"
+            android:text=" 手气最佳"
+            android:textColor="#f9991d" />
+
+        <!-- yellow f9991d-->
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_luckymoney"
+        android:background="#f7f4eb" />
+
+    <TextView
+        android:id="@+id/tv_006"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_luckymoney"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:onClick="showLuckyMoneyLog"
+        android:text="查看我的红包记录"
+        android:textColor="#3a578d"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
