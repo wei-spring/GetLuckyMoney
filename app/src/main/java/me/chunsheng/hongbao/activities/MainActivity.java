@@ -6,6 +6,8 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,6 +19,7 @@ import android.view.accessibility.AccessibilityManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import me.chunsheng.hongbao.R;
 import me.chunsheng.hongbao.utils.UpdateTask;
@@ -37,7 +40,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         switchPlugin = (Button) findViewById(R.id.button_accessible);
-
+        //me.chunsheng.hongbao.utils.ZoomImageView test = (me.chunsheng.hongbao.utils.ZoomImageView) findViewById(R.id.test);
+        Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(),
+                R.mipmap.ic_launcher);
+//        test.setImage(bitmap);
+//        test.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(MainActivity.this,"点击了我呀",Toast.LENGTH_SHORT).show();
+//            }
+//        });
         handleMIUIStatusBar();
         updateServiceStatus();
 
@@ -113,10 +125,9 @@ public class MainActivity extends Activity {
     }
 
     public void openGithub(View view) {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/geeeeeeeeek/WeChatLuckyMoney"));
+        Intent browserIntent = new Intent(this, GallaryActivity.class);
         startActivity(browserIntent);
     }
-
     public void openSettings(View view) {
         Intent settingsIntent = new Intent(this, SettingsActivity.class);
         startActivity(settingsIntent);

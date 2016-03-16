@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="me.chunsheng.hongbao">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -10,13 +11,29 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 如果使用积分墙广告,还需要配置下面权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name">
         <activity
-            android:name="me.chunsheng.hongbao.activities.MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Base.Theme.AppCompat.Light">
             <intent-filter>
@@ -26,14 +43,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="me.chunsheng.hongbao.activities.SettingsActivity"
+            android:name=".activities.SettingsActivity"
             android:theme="@style/Base.Theme.AppCompat.Light" />
         <activity
-            android:name="me.chunsheng.hongbao.activities.LuckyMoneyActivity"
+            android:name=".activities.LuckyMoneyActivity"
             android:theme="@style/Base.Theme.AppCompat.Light" />
 
         <service
-            android:name="me.chunsheng.hongbao.services.HongbaoService"
+            android:name=".services.HongbaoService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
@@ -45,8 +62,9 @@
         </service>
 
         <activity
-            android:name="me.chunsheng.hongbao.activities.WebViewActivity"
-            android:theme="@style/Base.Theme.AppCompat.Light"></activity>
+            android:name=".activities.WebViewActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light" />
+        <activity android:name=".activities.GallaryActivity"></activity>
     </application>
 
 </manifest>

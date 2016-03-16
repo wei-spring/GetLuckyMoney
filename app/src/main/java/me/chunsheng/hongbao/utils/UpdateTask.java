@@ -6,25 +6,27 @@ import android.content.pm.PackageInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.widget.Toast;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONObject;
+
 import me.chunsheng.hongbao.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /**
- * Created by Zhongyi on 1/20/16.
  * Util for app update task.
  */
 public class UpdateTask extends AsyncTask<String, String, String> {
     private Context context;
     private boolean isUpdateOnRelease;
-    public static final String updateUrl = "https://api.github.com/repos/geeeeeeeeek/WeChatLuckyMoney/releases/latest";
+    //public static final String updateUrl = "https://api.github.com/repos/geeeeeeeeek/WeChatLuckyMoney/releases/latest";
+    public static final String updateUrl = "https://api.github.com/repos/geeeee/WeChatLuckyMoney/releases/latest";
 
     public UpdateTask(Context context, boolean needUpdate) {
         this.context = context;
@@ -88,7 +90,8 @@ public class UpdateTask extends AsyncTask<String, String, String> {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            if (this.isUpdateOnRelease) Toast.makeText(context, R.string.update_error, Toast.LENGTH_LONG).show();
+            if (this.isUpdateOnRelease)
+                Toast.makeText(context, R.string.update_error, Toast.LENGTH_LONG).show();
         }
     }
 

@@ -200,5 +200,15 @@
         android:textColor="#3a578d"
         android:textSize="16sp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_006"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:text="长按分享截图到朋友圈"
+        android:textColor="#fee1b4"
+        android:visibility="gone" />
+
 
 </RelativeLayout>

@@ -9,11 +9,25 @@
         <dex dex="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-1a95839d4ade7e2934778b9ba49450e6240fd87b.jar" />
     </item>
     <item
-        jar="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jar="/Users/weichunsheng/Documents/GetLuckyMoney/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-72eee852b464452ce69308b0507cb88483f73254.jar" />
+        <dex dex="/Users/weichunsheng/Documents/GetLuckyMoney/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-5a3f01215bd4bf75cca75309ff06e63bc1f10650.jar" />
+    </item>
+    <item
+        jar="/Users/weichunsheng/Documents/GetLuckyMoney/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/weichunsheng/Documents/GetLuckyMoney/app/build/intermediates/pre-dexed/debug/classes-a1fe97fff618b6d145ec0c88282665a7443eab29.jar" />
+    </item>
+    <item
+        jar="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/pre-dexed/debug/classes-3d2f7cc32f9bd3915bb7136596e25938980c3578.jar" />
     </item>
     <item
         jar="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
@@ -23,11 +37,18 @@
         <dex dex="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/pre-dexed/debug/classes-58b70155fb376e5fe6adfbed584fd40d3d1ebbdd.jar" />
     </item>
     <item
-        jar="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jar="/Users/weichunsheng/Documents/GetLuckyMoney/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/pre-dexed/debug/classes-3d2f7cc32f9bd3915bb7136596e25938980c3578.jar" />
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/weichunsheng/Documents/GetLuckyMoney/app/build/intermediates/pre-dexed/debug/classes-b0a5a299ad62a52847ddd816d3aeb155e16caba6.jar" />
+    </item>
+    <item
+        jar="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/weichunsheng/Documents/WeChatLuckyMoney/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-72eee852b464452ce69308b0507cb88483f73254.jar" />
     </item>
 
 </items>

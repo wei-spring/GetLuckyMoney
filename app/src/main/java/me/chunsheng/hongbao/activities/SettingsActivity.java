@@ -25,13 +25,13 @@ public class SettingsActivity extends PreferenceActivity {
 
     private void setPrefListeners() {
         // Check for updates
-        Preference updatePref = findPreference("pref_etc_check_update");
-        updatePref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            public boolean onPreferenceClick(Preference preference) {
-                new UpdateTask(getApplicationContext(), true).update();
-                return false;
-            }
-        });
+//        Preference updatePref = findPreference("pref_etc_check_update");
+//        updatePref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+//            public boolean onPreferenceClick(Preference preference) {
+//                new UpdateTask(getApplicationContext(), true).update();
+//                return false;
+//            }
+//        });
 
         // 打开使用说明
         Preference issuePref = findPreference("pref_etc_issue");
